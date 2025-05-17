@@ -12,7 +12,7 @@
             padding: 20px;
             background-color: #f4f4f4;
             text-align: center;
-
+        }
             h1 {
                 color: #333;
             }
@@ -48,7 +48,7 @@
             .subtopics a:hover {
                 text-decoration: underline;
             }
-        }
+            
     </style>
 </head>
 <body>
@@ -63,7 +63,7 @@
             <a href="topics/machine-learning.html">Machine Learning</a>
             <a href="topics/natural-language-processing.html">Natural Language Processing</a>
             <a href="topics/computer-vision.html">Computer Vision</a>
-            <a href="topics/ethics-in-ai.html">Computer Vision</a>
+            <a href="topics/ethics-in-ai.html">Ethics in AI</a>
             </div>
         </div>
 
@@ -71,7 +71,7 @@
         <div class="category" onclick="toggleSubtopics('computer-sys-topics')">
             Computer Systems
             <div class="subtopics" id="computer-sys-topics">
-            <a href="operating-systems.html">Operating Systems</a>
+            <a href="topics/operating-systems.html">Operating Systems</a>
             <a href="topics/computer-architecture.html">Computer Architecture</a>
             <a href="topics/cloud-computing.html">Cloud Computing</a>
             <a href="topics/internet-of-things.html">Internet of Things</a>
@@ -80,7 +80,7 @@
 
                 <!-- Computer Systems -->
                 <div class="category" onclick="toggleSubtopics('cyber-topics')">
-                    cybersecurity
+                    Cybersecurity
                     <div class="subtopics" id="cyber-topics">
                     <a href="topics/network-security.html">Network Security</a>
                     <a href="topics/encryption.html">Encryption</a>
@@ -98,7 +98,7 @@
 
         //toggle the one that was clicked
         const subtopics = document.getElementById(id);
-        subtopics.style.display = subtopics.style.display == 'block' ? 'none' : block;
+        subtopics.style.display = subtopics.style.display == 'block' ? 'none' : 'block';
         }
     </script>
 </body>
