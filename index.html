@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Computer Science Topics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Explore how cutting-edge innovations are transforming computer science and the world. 
+            Learn how fields within artifical intelligence, cybersecurity and computer systems are reshaping the landscape of computer science and global technology.</h1>
+        <div class="category" onclick="toggleSubtopics('ai-topics')">
+            Artificial intelligence
+            <div class="subtopics" id="ai-topics">
+            <a href="topics/machine-learning.html">Machine Learning</a>
+            <a href="topics/natural-language-processing.html">Natural Language Processing</a>
+            <a href="topics/computer-vision.html">Computer Vision</a>
+            <a href="topics/ethics-in-ai.html">Computer Vision</a>
+            </div>
+        </div>
+
+        <!-- Computer Systems -->
+        <div class="category" onclick="toggleSubtopics('computer-sys-topics')">
+            Computer Systems
+            <div class="subtopics" id="computer-sys-topics">
+            <a href="operating-systems.html">Operating Systems</a>
+            <a href="topics/computer-architecture.html">Computer Architecture</a>
+            <a href="topics/cloud-computing.html">Cloud Computing</a>
+            <a href="topics/internet-of-things.html">Internet of Things</a>
+            </div>
+        </div>
+
+                <!-- Computer Systems -->
+                <div class="category" onclick="toggleSubtopics('cyber-topics')">
+                    cybersecurity
+                    <div class="subtopics" id="cyber-topics">
+                    <a href="topics/network-security.html">Network Security</a>
+                    <a href="topics/encryption.html">Encryption</a>
+                    <a href="topics/penetration-testing.html">Penetration Testing</a>
+                    <a href="topics/social-engineering.html">Social Engineering</a>
+                    </div>
+                </div>
+    </main>
+    <script>
+        function toggleSubtopics(id){
+            //collapse all subtopics first
+            document.querySelectorAll('.subtopics').forEach(el => {
+                if (el.id != id) el.style.display = 'none';
+            });
+
+        //toggle the one that was clicked
+        const subtopics = document.getElementById(id);
+        subtopics.style.display = subtopics.style.display == 'block' ? 'none' : block;
+        }
+    </script>
+</body>
+</html>
