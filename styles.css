@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Category Cards */
+.category {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.category:hover {
+    background-color: #e9f0ff;
+}
+
+/* Subtopics */
+.subtopics {
+    display: none;
+    margin-top: 10px;
+}
+
+.subtopics a {
+    display: block;
+    margin: 8px 0;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.subtopics a:hover {
+    text-decoration: underline;
+}
+
+/* Topic Page Content */
+.topic-container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.topic-container h2 {
+    color: #222;
+}
+
+.topic-container p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.topic-container img, .topic-container video {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Back Button */
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004999;
+}
