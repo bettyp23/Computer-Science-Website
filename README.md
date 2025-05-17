@@ -44,4 +44,4 @@ Clicking a field reveals 4 subtopics. Each subtopic opens a dedicated HTML page 
 
 ## 🚀 Deployment
 
-🔗 Live Site: https://bettyp23.github.io/Computer-Science-Website/topics/machine-learning.html
+🔗 Live Site: https://bettyp23.github.io/Computer-Science-Website
