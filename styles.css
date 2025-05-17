@@ -5,14 +5,20 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 h1 {
     color: #333;
     max-width: 800px;
-    margin: 0 auto 30px;
+    margin: 40px auto 30px;
     font-size: 1.5rem;
     line-height: 1.6;
+    padding: 0 20px;
 }
 
 /* Category Cards */
@@ -57,26 +63,63 @@ h1 {
 .topic-container {
     max-width: 700px;
     margin: 40px auto;
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    text-align: left;
+    padding: 30px;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
 }
 
 .topic-container h2 {
     color: #222;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .topic-container p {
-    color: #444;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
     line-height: 1.6;
 }
 
-.topic-container img, .topic-container video {
+.topic-container img {
     width: 100%;
-    margin-top: 15px;
-    border-radius: 8px;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+/* Scale on Hover */
+.topic-container img:hover {
+    transform: scale(1.02);
+}
+
+/* Simulated Hover Description */
+.topic-container .img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.topic-container .img-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.topic-container .img-wrapper:hover .img-description {
+    opacity: 1;
 }
 
 /* Back Button */
