@@ -37,10 +37,9 @@ Clicking a field reveals 4 subtopics. Each subtopic opens a dedicated HTML page 
 
 ## 📁 File Structure
 - `index.html` – Homepage  
-- `topics/` – 12 topic pages (e.g., `machine-learning.html`)  
-- `css/styles.css` – Styles  
-- `js/script.js` – Navigation logic  
-- `assets/` – Images & diagrams (optional)  
+- `styles.css` – Styles 
+- `topics/` – 12 topic pages (e.g., `machine-learning.html`)   
+- `img/` – Images & diagrams (optional)  
 
 ## 🚀 Deployment
 
